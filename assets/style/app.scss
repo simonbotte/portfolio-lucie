@@ -1,0 +1,35 @@
+@use "reset.css";
+
+:root {
+    --container-width: 100%;
+    --mini-container-width: 100%;
+    --soft-aqua-900: #193f3c;
+    --soft-aqua-800: #2f514e;
+    --soft-aqua-400: #6fa59f;
+    --pale-yellow-50: #f7f4e0;
+}
+body {
+    color: var(--pale-yellow-50);
+    background-color: var(--soft-aqua-400);
+    font-family: "quicksand", sans-serif;
+}
+@media (min-width: 768px) {
+    :root {
+        --container-width: 768px;
+        --mini-container-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    :root {
+        --container-width: 1024px;
+        --mini-container-width: 853px;
+    }
+}
+
+@media (min-width: 1440px) {
+    :root {
+        --container-width: 1440px;
+        --mini-container-width: 853px;
+    }
+}
+
