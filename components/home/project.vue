@@ -7,22 +7,24 @@ const apiBaseUrl = config.public.STRAPI_URL;
 </script>
 
 <template>
-    <div class="project">
+    <NuxtLink :to="project.link" target="_blank" class="project">
         <div class="project__miniature">
             <img :src="apiBaseUrl + project.miniature.data.attributes.formats.medium.url" alt="miniature" />
         </div>
         <div class="project__content">
             <h3 class="project__title">{{ project.title }}</h3>
-            <p class="project__type">{{ project.type }}</p>
+            <p class="project__type">{{ project.type }} - {{ project.status }}</p>
             <p class="project__shortDescription">{{ project.short_description }}</p>
         </div>
-    </div>
+    </NuxtLink>
 </template>
 
 <style lang="scss" scoped>
 .project {
     position: relative;
     overflow: hidden;
+    color: var(--pale-yellow-50);
+    text-decoration: none;
     &__miniature {
         position: absolute;
         z-index: 1;

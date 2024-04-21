@@ -14,14 +14,14 @@ schoolProjects.value = projects.value.filter((project) => project.attributes.cat
 <template>
     <section class="projects">
         <div class="projects__wrapper">
-            <div class="projects__category">
+            <div v-if="schoolProjects.length > 0" class="projects__category">
                 <h2>{{content.schoolTitle}}</h2>
                 <div class="projects__list">
                     <HomeProject v-for="project in schoolProjects" :key="project.id" :project="project.attributes" />
                 </div>
             </div>
 
-            <div class="projects__category">
+            <div v-if="professionalProjects.length > 0" class="projects__category">
                 <h2>{{content.professionalTitle}}</h2>
                 <div class="projects__list">
                     <HomeProject
