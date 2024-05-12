@@ -46,8 +46,9 @@ schoolProjects.value = projects.value.filter((project) => project.attributes.cat
         width: 100%;
         h2 {
             font-size: 2rem;
-            font-family: "pain-de-mie", sans-serif;
+            font-family: "TransformaSans", sans-serif;
             text-align: center;
+            font-weight: 900;
             @media (min-width: 1024px) {
                 font-size: 4rem;
             }

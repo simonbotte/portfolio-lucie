@@ -127,10 +127,13 @@ const toggleMenu = () => {
 }
 
 a {
-    font-family: "pain-de-mie", sans-serif;
+    font-family: "TransformaSans", sans-serif;
+    font-weight: 900;
     font-size: 2rem;
     line-height: 2rem;
+    padding-top: 8px;
     color: var(--pale-yellow-50);
     text-decoration: none;
+    text-transform: lowercase;
 }
 </style>

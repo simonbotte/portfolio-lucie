@@ -37,19 +37,21 @@ useSeoMeta({
 .legals {
     padding: 128px 16px 64px 16px;
     &__wrapper {
-        max-width: var(--container-width);
+        max-width: 760px;
         margin: 0 auto;
         h1 {
             font-size: 4rem;
-            font-family: "pain-de-mie", sans-serif;
+            font-family: "TransformaSans", sans-serif;
             text-align: center;
+            font-weight: 900;
         }
     }
     &__content {
         margin-top: 32px;
         :deep(h2) {
             font-size: 2rem;
-            font-family: "pain-de-mie", sans-serif;
+            font-family: "TransformaSans", sans-serif;
+            font-weight: 900;
             margin-bottom: 8px;
         }
         :deep(ul) {

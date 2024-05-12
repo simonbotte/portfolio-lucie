@@ -25,7 +25,7 @@ import { NuxtLink } from '#build/components';
     &__wrapper {
         max-width: var(--container-width);
         width: 100%;
-        padding: 16px;
+        padding: 24px 16px;
         border-radius: 16px 16px 0 0;
         display: flex;
         align-items: center;
@@ -37,9 +37,11 @@ import { NuxtLink } from '#build/components';
         width: 100%;
         justify-content: space-between;
         p {
-            font-family: "pain-de-mie", sans-serif;
+            font-family: "TransformaSans", sans-serif;
             font-size: 2rem;
+            font-weight: 900;
             line-height: 2rem;
+            text-transform: lowercase;
         }
     }
     &__right {
@@ -50,8 +52,9 @@ import { NuxtLink } from '#build/components';
         align-items: flex-end;
 
         p {
-            font-family: "pain-de-mie", sans-serif;
+            font-family: "TransformaSans", sans-serif;
             font-size: 2rem;
+            font-weight: 900;
             line-height: 2rem;
         }
     }

@@ -108,7 +108,7 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .hero {
-    height: 100vh;
+    height: calc(100vh - 64px);
     min-height: 500px;
     max-width: 100vw;
     overflow: hidden;
