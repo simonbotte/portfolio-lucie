@@ -7,6 +7,7 @@ const toggleMenu = () => {
 
 <template>
     <header :class="`appHeader ${isMenuOpen ? 'open' : ''}`">
+        <div class="appHeader__blur"></div>
         <div class="appHeader__wrapper">
             <div class="appHeader__left">
                 <div @click="toggleMenu" class="appHeader__burger">
@@ -26,7 +27,7 @@ const toggleMenu = () => {
                         <a href="#skills">Compétences</a>
                     </li>
                     <li>
-                        <a href="#projects">Projet</a>
+                        <a href="#projects">Expérience</a>
                     </li>
                 </ul>
             </nav>
@@ -38,10 +39,20 @@ const toggleMenu = () => {
 .appHeader {
     width: 100%;
     position: fixed;
-    top: 16px;
-    padding: 16px;
+    top: 0px;
+    padding: 32px 16px 0px 16px;
     z-index: 1000;
     box-sizing: border-box;
+    &__blur{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        backdrop-filter: blur(8px);
+        mask: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    }
     &__wrapper {
         background-color: var(--soft-aqua-900);
         max-width: var(--container-width);
