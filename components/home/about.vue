@@ -31,10 +31,6 @@ const apiBaseUrl = config.public.STRAPI_URL;
                 >
             </div>
         </div>
-        <div class="hero__blobs">
-            <NuxtImg src="/blob/2.svg" alt="Blob" class="blob2" />
-            <NuxtImg src="/blob/2.svg" alt="Blob" class="blob22" />
-        </div>
     </section>
 </template>
 
@@ -123,22 +119,6 @@ const apiBaseUrl = config.public.STRAPI_URL;
         &:hover {
             background-color: var(--pale-yellow-50);
             color: var(--soft-aqua-900);
-        }
-    }
-    .blob2 {
-        position: absolute;
-        top: -20%;
-        left: -64px;
-        z-index: 1;
-    }
-    .blob22 {
-        position: absolute;
-        top: -20%;
-        right: -64px;
-        z-index: 1;
-        display: none;
-        @media (min-width: 1024px) {
-            display: block;
         }
     }
 }
