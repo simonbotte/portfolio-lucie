@@ -14,13 +14,6 @@ schoolProjects.value = projects.value.filter((project) => project.attributes.cat
 <template>
     <section class="projects">
         <div class="projects__wrapper">
-            <div v-if="schoolProjects.length > 0" class="projects__category">
-                <h2>{{content.schoolTitle}}</h2>
-                <div class="projects__list">
-                    <HomeProject v-for="project in schoolProjects" :key="project.id" :project="project.attributes" />
-                </div>
-            </div>
-
             <div v-if="professionalProjects.length > 0" class="projects__category">
                 <h2>{{content.professionalTitle}}</h2>
                 <div class="projects__list">
@@ -31,6 +24,15 @@ schoolProjects.value = projects.value.filter((project) => project.attributes.cat
                     />
                 </div>
             </div>
+            
+            <div v-if="schoolProjects.length > 0" class="projects__category">
+                <h2>{{content.schoolTitle}}</h2>
+                <div class="projects__list">
+                    <HomeProject v-for="project in schoolProjects" :key="project.id" :project="project.attributes" />
+                </div>
+            </div>
+
+            
             <div class="hero__blobs">
                 <NuxtImg src="/blob/2.svg" alt="Blob" class="blob2" />
                 <NuxtImg src="/blob/3.svg" alt="Blob" class="blob3" />
