@@ -18,6 +18,7 @@ skills.value = data.value.data;
                     :key="skill.id"
                     :title="skill.attributes.name"
                     :image="skill.attributes.icon.data.attributes.url"
+                    :description="skill.attributes.description"
                 />
             </div>
         </div>
@@ -45,11 +46,11 @@ skills.value = data.value.data;
     }
     &__list {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 32px;
         margin-top: 32px;
         @media (min-width: 768px){
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
