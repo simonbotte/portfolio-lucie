@@ -107,16 +107,17 @@ const apiBaseUrl = config.public.STRAPI_URL;
         }
     }
     &__cv {
-        background-color: var(--soft-aqua-400);
+        background-color: var(--pale-yellow-base);
         display: flex;
         width: fit-content;
         padding: 12px 24px;
         font-size: 1rem;
-        color: var(--pale-yellow-50);
+        color: var(--soft-aqua-900);
         border-radius: 4px;
         font-weight: bold;
         cursor: pointer;
         transition: 300ms ease;
+        text-decoration: none;
         &:hover {
             background-color: var(--pale-yellow-50);
             color: var(--soft-aqua-900);
