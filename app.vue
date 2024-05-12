@@ -30,7 +30,7 @@ useHead({
             rel: "mask-icon",
             href: "/safari-pinned-tab.svg",
             color: "#e1e634",
-        },
+        }
     ],
     meta: [
         {

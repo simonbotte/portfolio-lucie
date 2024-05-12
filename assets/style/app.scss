@@ -1,4 +1,5 @@
 @use "reset.css";
+@use "fonts.scss";
 
 :root {
     --container-width: 100%;
@@ -7,6 +8,7 @@
     --soft-aqua-800: #2f514e;
     --soft-aqua-400: #6fa59f;
     --pale-yellow-50: #f7f4e0;
+    --pale-yellow-base:#DEDE3E;
 }
 body {
     color: var(--pale-yellow-50);
