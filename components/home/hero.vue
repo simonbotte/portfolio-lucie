@@ -14,10 +14,6 @@ const props = defineProps({
             <h1>Lucie Levrard</h1>
             <p>{{ content.job }}</p>
         </div>
-        <div class="hero__blobs">
-            <NuxtImg src="/blob/1.svg" alt="Blob" class="blob1" />
-            <NuxtImg src="/blob/3.svg" alt="Blob" class="blob3" />
-        </div>
     </section>
 </template>
 
@@ -51,21 +47,6 @@ const props = defineProps({
                 font-size: 5rem;
             }
         }
-    }
-    &__blobs {
-        width: 0px;
-    }
-    .blob1 {
-        position: absolute;
-        top: 0;
-        left: 36px;
-        z-index: -1;
-    }
-    .blob3 {
-        position: absolute;
-        top: 30%;
-        right: -36px;
-        z-index: -1;
     }
 }
 </style>
