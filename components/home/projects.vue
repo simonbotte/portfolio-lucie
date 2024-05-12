@@ -12,7 +12,7 @@ schoolProjects.value = projects.value.filter((project) => project.attributes.cat
 </script>
 
 <template>
-    <section class="projects">
+    <section id="projects" class="projects">
         <div class="projects__wrapper">
             <div v-if="professionalProjects.length > 0" class="projects__category">
                 <h2>{{content.professionalTitle}}</h2>

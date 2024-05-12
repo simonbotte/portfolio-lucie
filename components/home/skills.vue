@@ -9,7 +9,7 @@ skills.value = data.value.data;
 </script>
 
 <template>
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class="skills__wrapper">
             <h2>{{content.title}}</h2>
             <div class="skills__list">

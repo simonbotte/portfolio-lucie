@@ -11,7 +11,7 @@ const apiBaseUrl = config.public.STRAPI_URL;
 </script>
 
 <template>
-    <section class="about">
+    <section id="about" class="about">
         <div class="about__wrapper">
             <div class="about__portrait">
                 <img

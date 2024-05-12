@@ -82,7 +82,7 @@ const apiBaseUrl = config.public.STRAPI_URL;
         font-size: 1.5rem;
         font-family: "TransformaSans", sans-serif;
         text-align: center;
-        font-weight: 900;
+        font-weight: 700;
         @media (min-width: 768px) {
             font-size: 2rem;
         }
