@@ -31,4 +31,8 @@ useSeoMeta({
     <HomeProjects :content="content.projects" />
 </template>
 
-<style></style>
+<style>
+html {
+    scroll-behavior: smooth;
+}
+</style>

@@ -28,9 +28,14 @@ const apiBaseUrl = config.public.STRAPI_URL;
     justify-content: center;
     gap: 16px;
     // aspect-ratio: 1 / 1;
-    background-color: var(--soft-aqua-800);
+    background-color: var(--soft-aqua-800-80);
+    backdrop-filter: blur(8px);
     border-radius: 16px;
-    padding: 16px 24px;
+    padding: 32px 32px;
+    &:nth-child(2n-1):last-child {
+        grid-column: span 2;
+        
+    }
     figure {
         display: flex;
         gap: 8px;
@@ -51,6 +56,9 @@ const apiBaseUrl = config.public.STRAPI_URL;
             font-size: 1.5rem;
             padding-top: 4px;
         }
+    }
+    p{
+        line-height: 1.25rem;
     }
 }
 </style>

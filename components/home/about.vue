@@ -40,6 +40,7 @@ const apiBaseUrl = config.public.STRAPI_URL;
     padding: 64px 16px;
     position: relative;
     &__wrapper {
+        position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 32px;
@@ -123,5 +124,6 @@ const apiBaseUrl = config.public.STRAPI_URL;
             color: var(--soft-aqua-900);
         }
     }
+    
 }
 </style>

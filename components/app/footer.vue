@@ -53,9 +53,12 @@ import { NuxtLink } from '#build/components';
 
         p {
             font-family: "TransformaSans", sans-serif;
-            font-size: 2rem;
+            font-size: 1.25rem;
             font-weight: 900;
             line-height: 2rem;
+            @media screen and (min-width: 768px){
+                font-size: 1.5rem;
+            }
         }
     }
     &__mail {

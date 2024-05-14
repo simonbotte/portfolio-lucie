@@ -15,7 +15,7 @@ const toggleMenu = () => {
                     <span></span>
                     <span></span>
                 </div>
-                <NuxtLink to="/">Lucie Levrard</NuxtLink>
+                <NuxtLink title="Accueil" to="/">Lucie Levrard</NuxtLink>
             </div>
 
             <nav class="appHeader__right">
@@ -27,7 +27,7 @@ const toggleMenu = () => {
                         <a href="#skills">Compétences</a>
                     </li>
                     <li>
-                        <a href="#projects">Expérience</a>
+                        <a href="#projects">Expériences</a>
                     </li>
                 </ul>
             </nav>
@@ -43,7 +43,7 @@ const toggleMenu = () => {
     padding: 32px 16px 0px 16px;
     z-index: 1000;
     box-sizing: border-box;
-    &__blur{
+    &__blur {
         position: absolute;
         top: 0;
         left: 0;
@@ -89,6 +89,16 @@ const toggleMenu = () => {
         align-items: center;
         width: 100%;
         justify-content: space-between;
+        a {
+            font-family: "TransformaSans", sans-serif;
+            font-weight: 900;
+            font-size: 2rem;
+            line-height: 2rem;
+            padding-top: 8px;
+            color: var(--pale-yellow-50);
+            text-decoration: none;
+            text-transform: lowercase;
+        }
     }
     &__right {
         width: 100%;
@@ -115,10 +125,11 @@ const toggleMenu = () => {
             li {
                 list-style: none;
                 a {
-                    text-decoration: none;
                     font-size: 1rem;
                     color: var(--pale-yellow-50);
                     font-family: "quicksand", sans-serif;
+                    text-decoration: none;
+                    font-weight: bold;
                 }
             }
         }
@@ -135,16 +146,5 @@ const toggleMenu = () => {
             transform: translateY(0);
         }
     }
-}
-
-a {
-    font-family: "TransformaSans", sans-serif;
-    font-weight: 900;
-    font-size: 2rem;
-    line-height: 2rem;
-    padding-top: 8px;
-    color: var(--pale-yellow-50);
-    text-decoration: none;
-    text-transform: lowercase;
 }
 </style>

@@ -21,6 +21,7 @@ skills.value = data.value.data;
                     :description="skill.attributes.description"
                 />
             </div>
+            <AppWire class="skills__wire"></AppWire>
         </div>
     </section>
 </template>
@@ -30,6 +31,7 @@ skills.value = data.value.data;
     padding: 64px 16px;
     &__wrapper {
         max-width: 400px;
+        position: relative;
         margin: 0 auto;
         @media (min-width: 768px){
             max-width: var(--mini-container-width);
@@ -49,9 +51,18 @@ skills.value = data.value.data;
         grid-template-columns: repeat(1, 1fr);
         gap: 32px;
         margin-top: 32px;
+        position: relative;
+        z-index: 1;
         @media (min-width: 768px){
             grid-template-columns: repeat(2, 1fr);
         }
+    }
+    &__wire {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
     }
 }
 </style>

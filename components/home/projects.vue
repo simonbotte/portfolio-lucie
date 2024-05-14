@@ -15,7 +15,7 @@ schoolProjects.value = projects.value.filter((project) => project.attributes.cat
     <section id="projects" class="projects">
         <div class="projects__wrapper">
             <div v-if="professionalProjects.length > 0" class="projects__category">
-                <h2>{{content.professionalTitle}}</h2>
+                <h2>{{ content.professionalTitle }}</h2>
                 <div class="projects__list">
                     <HomeProject
                         v-for="project in professionalProjects"
@@ -26,11 +26,13 @@ schoolProjects.value = projects.value.filter((project) => project.attributes.cat
             </div>
 
             <div v-if="schoolProjects.length > 0" class="projects__category">
-                <h2>{{content.schoolTitle}}</h2>
+                <h2>{{ content.schoolTitle }}</h2>
                 <div class="projects__list">
                     <HomeProject v-for="project in schoolProjects" :key="project.id" :project="project.attributes" />
                 </div>
             </div>
+            <AppWire class="projects__wire1"></AppWire>
+            <AppWire class="projects__wire2"></AppWire>
         </div>
     </section>
 </template>
@@ -38,7 +40,6 @@ schoolProjects.value = projects.value.filter((project) => project.attributes.cat
 <style lang="scss" scoped>
 .projects {
     padding: 64px 16px;
-
     &__wrapper {
         position: relative;
         max-width: var(--container-width);
@@ -69,6 +70,21 @@ schoolProjects.value = projects.value.filter((project) => project.attributes.cat
     }
     &__category {
         margin-bottom: 64px;
+    }
+    &__wire1 {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+    }
+
+    &__wire2 {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
     }
 }
 </style>
