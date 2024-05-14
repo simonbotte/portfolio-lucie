@@ -30,7 +30,7 @@ skills.value = data.value.data;
 .skills {
     padding: 64px 16px;
     &__wrapper {
-        max-width: 400px;
+        max-width: var(--mini-container-width);
         position: relative;
         margin: 0 auto;
         @media (min-width: 768px){
@@ -53,6 +53,7 @@ skills.value = data.value.data;
         margin-top: 32px;
         position: relative;
         z-index: 1;
+        width: 100%;
         @media (min-width: 768px){
             grid-template-columns: repeat(2, 1fr);
         }

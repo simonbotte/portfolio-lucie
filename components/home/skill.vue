@@ -33,7 +33,10 @@ const apiBaseUrl = config.public.STRAPI_URL;
     border-radius: 16px;
     padding: 32px 32px;
     &:nth-child(2n-1):last-child {
-        grid-column: span 2;
+        grid-column: span 1;
+        @media (min-width: 768px){
+            grid-column: span 2;
+        }
         
     }
     figure {
