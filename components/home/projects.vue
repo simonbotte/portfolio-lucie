@@ -69,7 +69,7 @@ schoolProjects.value = projects.value.filter((project) => project.attributes.cat
         }
     }
     &__category {
-        margin-bottom: 64px;
+        margin-bottom: 128px;
     }
     &__wire1 {
         position: absolute;

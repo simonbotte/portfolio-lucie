@@ -130,6 +130,7 @@ const toggleMenu = () => {
                     font-family: "quicksand", sans-serif;
                     text-decoration: none;
                     font-weight: bold;
+                    line-height: 1.25rem;
                 }
             }
         }
